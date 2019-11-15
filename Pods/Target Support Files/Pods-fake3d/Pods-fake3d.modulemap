@@ -1,0 +1,6 @@
+framework module Pods_fake3d {
+  umbrella header "Pods-fake3d-umbrella.h"
+
+  export *
+  module * { export * }
+}
