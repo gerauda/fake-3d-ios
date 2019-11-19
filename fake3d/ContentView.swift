@@ -10,16 +10,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var STEP = 10
-    var MAX_STEPS = 44
+    let STEP = 10
+    let MAX_STEPS = 72
     
-    @State var currentFrame = 0
+    @State var currentFrame = 1
     @State var moving = false
     @State var startLocation: CGFloat = 0.0;
     @State var startFrame = 0;
     
     var body: some View {
-        Image(String(format: "frame_%02d_delay-0.09s", self.currentFrame as Int))
+        Image(String(format: "%02d", self.currentFrame as Int))
             .gesture(
                 DragGesture()
                     .onChanged { value in
@@ -31,11 +31,11 @@ struct ContentView: View {
                         
                         self.currentFrame = self.startFrame + Int(((value.location.x - self.startLocation) / CGFloat(self.STEP)))
                         
-                        while (self.currentFrame >= self.MAX_STEPS) {
+                        while (self.currentFrame > self.MAX_STEPS) {
                             self.currentFrame -= self.MAX_STEPS
                         }
                         
-                        while (self.currentFrame < 0) {
+                        while (self.currentFrame < 1) {
                             self.currentFrame += self.MAX_STEPS
                         }
                 }
