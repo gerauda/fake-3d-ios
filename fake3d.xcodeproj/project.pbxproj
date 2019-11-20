@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A8290AB44181AAE7B66B11 /* Pods_fake3d_fake3dUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE875AF620D9F56A89D62B0C /* Pods_fake3d_fake3dUITests.framework */; };
+		5BEB048E9CE5A35E74EA8783 /* Pods_fake3dUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5D370BF20A47404EF56995 /* Pods_fake3dUITests.framework */; };
+		714F463723842ADE00FF657D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F463623842ADE00FF657D /* LoadingView.swift */; };
+		714F463B2384D88300FF657D /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F463A2384D88300FF657D /* DownloadManager.swift */; };
 		71A2FDAF237E7347005D44DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2FDAE237E7347005D44DB /* AppDelegate.swift */; };
 		71A2FDB1237E7347005D44DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2FDB0237E7347005D44DB /* SceneDelegate.swift */; };
 		71A2FDB3237E7347005D44DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A2FDB2237E7347005D44DB /* ContentView.swift */; };
@@ -39,7 +41,10 @@
 
 /* Begin PBXFileReference section */
 		39A5859BB3E3D4C41D8CB8DF /* Pods-fake3d-fake3dUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3d-fake3dUITests.release.xcconfig"; path = "Target Support Files/Pods-fake3d-fake3dUITests/Pods-fake3d-fake3dUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F5D370BF20A47404EF56995 /* Pods_fake3dUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fake3dUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DEFEAC03B3F4BEF44369AE /* Pods-fake3dTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3dTests.release.xcconfig"; path = "Target Support Files/Pods-fake3dTests/Pods-fake3dTests.release.xcconfig"; sourceTree = "<group>"; };
+		714F463623842ADE00FF657D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		714F463A2384D88300FF657D /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		71A2FDAB237E7347005D44DB /* fake3d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fake3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A2FDAE237E7347005D44DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71A2FDB0237E7347005D44DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,11 +61,12 @@
 		71A2FDD2237E7349005D44DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		724C2C13575DCA1AF768D75A /* Pods_fake3d.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fake3d.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		774AD49F634CE71847A2E22D /* Pods-fake3d.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3d.debug.xcconfig"; path = "Target Support Files/Pods-fake3d/Pods-fake3d.debug.xcconfig"; sourceTree = "<group>"; };
-		BE875AF620D9F56A89D62B0C /* Pods_fake3d_fake3dUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fake3d_fake3dUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2B590B954D9702A76D2F9F /* Pods-fake3dUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3dUITests.release.xcconfig"; path = "Target Support Files/Pods-fake3dUITests/Pods-fake3dUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BF2E2BE2EB1D2C62A7C2E2F9 /* Pods_fake3dTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fake3dTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26B867EB476E9A1E05856FF /* Pods-fake3dTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3dTests.debug.xcconfig"; path = "Target Support Files/Pods-fake3dTests/Pods-fake3dTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA37572E6FF0350CFE76A1CA /* Pods-fake3d.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3d.release.xcconfig"; path = "Target Support Files/Pods-fake3d/Pods-fake3d.release.xcconfig"; sourceTree = "<group>"; };
 		DBD018EEEC83A79C4EAAFA12 /* Pods-fake3d-fake3dUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3d-fake3dUITests.debug.xcconfig"; path = "Target Support Files/Pods-fake3d-fake3dUITests/Pods-fake3d-fake3dUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1E62914354968FE0655FBA2 /* Pods-fake3dUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fake3dUITests.debug.xcconfig"; path = "Target Support Files/Pods-fake3dUITests/Pods-fake3dUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A8290AB44181AAE7B66B11 /* Pods_fake3d_fake3dUITests.framework in Frameworks */,
+				5BEB048E9CE5A35E74EA8783 /* Pods_fake3dUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,8 @@
 				39A5859BB3E3D4C41D8CB8DF /* Pods-fake3d-fake3dUITests.release.xcconfig */,
 				C26B867EB476E9A1E05856FF /* Pods-fake3dTests.debug.xcconfig */,
 				55DEFEAC03B3F4BEF44369AE /* Pods-fake3dTests.release.xcconfig */,
+				E1E62914354968FE0655FBA2 /* Pods-fake3dUITests.debug.xcconfig */,
+				AF2B590B954D9702A76D2F9F /* Pods-fake3dUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -108,10 +116,27 @@
 			isa = PBXGroup;
 			children = (
 				724C2C13575DCA1AF768D75A /* Pods_fake3d.framework */,
-				BE875AF620D9F56A89D62B0C /* Pods_fake3d_fake3dUITests.framework */,
 				BF2E2BE2EB1D2C62A7C2E2F9 /* Pods_fake3dTests.framework */,
+				4F5D370BF20A47404EF56995 /* Pods_fake3dUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		714F46382384D85500FF657D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71A2FDB2237E7347005D44DB /* ContentView.swift */,
+				714F463623842ADE00FF657D /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		714F46392384D87000FF657D /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				714F463A2384D88300FF657D /* DownloadManager.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 		71A2FDA2237E7347005D44DB = {
@@ -141,7 +166,8 @@
 			children = (
 				71A2FDAE237E7347005D44DB /* AppDelegate.swift */,
 				71A2FDB0237E7347005D44DB /* SceneDelegate.swift */,
-				71A2FDB2237E7347005D44DB /* ContentView.swift */,
+				714F46392384D87000FF657D /* Observables */,
+				714F46382384D85500FF657D /* Views */,
 				71A2FDB4237E7349005D44DB /* Assets.xcassets */,
 				71A2FDB9237E7349005D44DB /* LaunchScreen.storyboard */,
 				71A2FDBC237E7349005D44DB /* Info.plist */,
@@ -365,7 +391,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-fake3d-fake3dUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-fake3dUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -380,6 +406,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71A2FDAF237E7347005D44DB /* AppDelegate.swift in Sources */,
+				714F463B2384D88300FF657D /* DownloadManager.swift in Sources */,
+				714F463723842ADE00FF657D /* LoadingView.swift in Sources */,
 				71A2FDB1237E7347005D44DB /* SceneDelegate.swift in Sources */,
 				71A2FDB3237E7347005D44DB /* ContentView.swift in Sources */,
 			);
@@ -634,7 +662,7 @@
 		};
 		71A2FDDC237E7349005D44DB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBD018EEEC83A79C4EAAFA12 /* Pods-fake3d-fake3dUITests.debug.xcconfig */;
+			baseConfigurationReference = E1E62914354968FE0655FBA2 /* Pods-fake3dUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,7 +683,7 @@
 		};
 		71A2FDDD237E7349005D44DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39A5859BB3E3D4C41D8CB8DF /* Pods-fake3d-fake3dUITests.release.xcconfig */;
+			baseConfigurationReference = AF2B590B954D9702A76D2F9F /* Pods-fake3dUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
